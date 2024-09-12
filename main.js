@@ -5,7 +5,7 @@
         <style>
         </style>
         <div id="root" style="width: 100%; height: 100%;">
-        Hello Custom Widget2
+        Hello Custom Widget
         </div>
       `
   class Main extends HTMLElement {
@@ -17,23 +17,25 @@
 
       this._root = this._shadowRoot.getElementById('root')
     }
+
     onCustomWidgetResize (width, height) {
       this.render()
     }
+
     onCustomWidgetAfterUpdate (changedProps) {
       this.render()
     }
+
     onCustomWidgetDestroy () {
     }
-
-    async render () {
-      const dataBinding = this.dataBinding
-      if (!dataBinding || dataBinding.state !== 'success') {
-        return
+      async render () {
+        const dataBinding = this.dataBinding
+        if (!dataBinding || dataBinding.state !== 'success') {
+           return
+         }
+         this._root.textContent = JSON.stringify(dataBinding)
       }
-      this._root.textContent = JSON.stringify(dataBinding)
-    }
-    
+  }
 
-  customElements.define('com-sap-sac-exercise-sh-main', Main)
+  customElements.define('com-sap-sac-exercise-003-main', Main)
 })()
