@@ -19,8 +19,8 @@ UVORK5CYII=",
  "webcomponents": [
  {
  "kind": "main",
- "tag": "com-sap-sac-exercise-001-main",
- "url": "https://sungjun1004.github.io/CW_TEMP/Step_01/main.js",
+ "tag": "com-sap-sac-exercise-shl-main",
+ "url": "/main.js",
  "integrity": "",
  "ignoreIntegrity": true
  }
