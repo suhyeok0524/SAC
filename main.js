@@ -5,7 +5,7 @@
         <style>
         </style>
         <div id="root" style="width: 100%; height: 100%;">
-        Hello Custom Widget
+        Hello Custom Widget2
         </div>
       `
   class Main extends HTMLElement {
@@ -26,6 +26,7 @@
     }
 
     render() {
+      console.log('test')
       this._root.textContent = `Hello Custom Widget ClientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
     }
     
