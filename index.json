@@ -28,7 +28,7 @@
  }
  },
  "methods":{},
- "events":{}
+ "events":{},
  "dataBindings": {
   "dataBinding": {
    "feeds": [
