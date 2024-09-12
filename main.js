@@ -21,13 +21,17 @@
       this.render()
     }
     onCustomWidgetAfterUpdate (changedProps) {
+      this.render()
     }
     onCustomWidgetDestroy () {
     }
 
-    render() {
-      console.log('test')
-      this._root.textContent = `Hello Custom Widget ClientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
+    async render () {
+      const dataBinding = this.dataBinding
+      if (!dataBinding || dataBinding.state !== 'success') {
+        return
+      }
+      this._root.textContent = JSON.stringify(dataBinding)
     }
     
 
