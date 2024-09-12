@@ -37,5 +37,5 @@
       }
   }
 
-  customElements.define('com-sap-sac-exercise-shl-main', Main)
+  customElements.define('com-sap-sac-exercise-sh-main', Main)
 })()
