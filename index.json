@@ -11,7 +11,7 @@
  "webcomponents": [
  {
  "kind": "main",
- "tag": "com-sap-sac-exercise-shl-main",
+ "tag": "com-sap-sac-exercise-sh-main",
  "url": "/main.js",
  "integrity": "",
  "ignoreIntegrity": true
