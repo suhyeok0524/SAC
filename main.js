@@ -1,5 +1,5 @@
 
-function () {
+(function () {
   const template = document.createElement('template')
   template.innerHTML = `
         <style>
@@ -31,4 +31,4 @@ function () {
     
 
   customElements.define('com-sap-sac-exercise-shl-main', Main)
-}()
+})()
